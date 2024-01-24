@@ -1,7 +1,8 @@
-package app.gratum.datastorepreferences
+package app.gratum.datastorepreferences.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import app.gratum.datastorepreferences.R
 import app.gratum.datastorepreferences.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
