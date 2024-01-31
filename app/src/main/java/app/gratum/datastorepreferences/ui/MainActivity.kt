@@ -2,6 +2,11 @@ package app.gratum.datastorepreferences.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
 import app.gratum.datastorepreferences.R
 import app.gratum.datastorepreferences.databinding.ActivityMainBinding
 
@@ -13,11 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        // Inicializa el contenedor con el Fragment
-        val userFragment = UserFragment()
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainer, userFragment)
-            .commit()
     }
+
+
 }
